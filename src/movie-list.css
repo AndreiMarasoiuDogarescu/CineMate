@@ -1,0 +1,37 @@
+.movie-list {
+  margin-top: 2em;
+  padding-top: 1em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  transition: transform 0.25s;
+}
+
+.movie-item:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.movie-item {
+  flex: 0 0 auto;
+  margin-right: 20px; 
+}
+
+.movie-item:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  background: rgb(0, 0, 0, 0.8);
+  width: 100%;
+  transition: 0.5 ease;
+  opacity: 0;
+  bottom: 0;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+}
