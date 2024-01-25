@@ -5,6 +5,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MovieIcon from '@mui/icons-material/Movie';
+import { Link } from 'react-router-dom';
 
 
 export default function ButtonAppBar() {
@@ -12,6 +13,7 @@ export default function ButtonAppBar() {
     <Box sx={{ flexGrow: 1, justifyContent: 'space-between' }}>
       <AppBar position="static">
         <Toolbar>
+          <Link to="/">
           <IconButton
             size="medium"
             edge="start"
@@ -21,11 +23,13 @@ export default function ButtonAppBar() {
           >
 
             <MovieIcon />
-
           </IconButton>
+          </Link>
+          <Link to="/favouritesPage">
           <Button 
           variant='contained'
           >My Favourites</Button>
+          </Link>
         </Toolbar>
       </AppBar>
     </Box>

@@ -1,7 +1,7 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0;
   text-align: center;
   font-family: 'Roboto';
 }
@@ -12,7 +12,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 92vh;
   padding-left: 0;
 }
 
@@ -24,3 +24,8 @@
   margin-bottom: 2em;
 }
 
+.sticky-button {
+  position: sticky;
+  top: 20px;
+  right: 20px;
+}
