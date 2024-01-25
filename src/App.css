@@ -1,12 +1,13 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
+  /* max-width: 1280px; */
+  margin: 0 auto !important;
   padding: 0;
   text-align: center;
   font-family: 'Roboto';
 }
 
 .intro {
+  width: 100vw;
   background-size: cover;
   background-position: center;
   display: flex;

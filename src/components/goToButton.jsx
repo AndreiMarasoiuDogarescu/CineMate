@@ -30,7 +30,7 @@ const StickyButton = ({ scrollToSearch, targetRef }) => {
 
   const buttonStyle = {
     position: 'fixed',
-    top: '20px',
+    top: '50px',
     right: '20px',
     display: isVisible ? 'block' : 'none'
   };
