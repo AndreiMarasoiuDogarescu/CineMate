@@ -12,13 +12,18 @@ import InputTitle from './titleInput';
 import InputYear from './yearInput';
 import MovieList from './movieList';
 import AddFavourite from './addFavorite';
-import StickyButton from './goToButton';
+import StickyButton from './goToSearchButton';
+import TopButton from './goToTop';
 
 
 
 export default function Filler() {
     const searchRef = useRef(null);
+    const titleRef = useRef(null);
 
+  const scrollToTop = () => {
+    titleRef.current.scrollIntoView({ behavior: 'smooth' });
+  }  
   const scrollToSearch = () => {
     searchRef.current.scrollIntoView({ behavior: 'smooth' });
   };
@@ -86,9 +91,9 @@ export default function Filler() {
   
   return (
       <ThemeProviderComponent>
-        <div>
-          <div className='intro' style={{ backgroundImage: `url(${heroImage})`}}>
-            <div className='titles'>
+        <div >
+          <div className='intro' style={{ backgroundImage: `url(${heroImage})`}} ref={titleRef}>
+            <div className='titles' >
             <h1>CineMate</h1>
             <p>Seen a lot? Are you forgetting more? Cinemate is your mate - save your memories... digitally.</p>
             </div>
@@ -104,6 +109,7 @@ export default function Filler() {
             <div>
             <StickyButton scrollToSearch={scrollToSearch} targetRef={searchRef}/>
             </div>
+            <TopButton scrollToTop={scrollToTop} targetRef={titleRef}/>
         </div>
       </ThemeProviderComponent>
     )
