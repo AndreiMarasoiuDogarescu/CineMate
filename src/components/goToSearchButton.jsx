@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+import SearchIcon from '@mui/icons-material/Search';
 
 const StickyButton = ({ scrollToSearch, targetRef }) => {
   const [isVisible, setIsVisible] = useState(true);
@@ -36,7 +36,7 @@ const StickyButton = ({ scrollToSearch, targetRef }) => {
   };
 
   return (
-    <button style={buttonStyle} onClick={scrollToSearch}><ArrowDownwardIcon color='inherit'/></button>
+    <button style={buttonStyle} onClick={scrollToSearch}><SearchIcon color='inherit'/></button>
   );
 };
 
