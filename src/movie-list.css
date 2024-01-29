@@ -26,7 +26,6 @@
 }
 
 .overlay {
-  /* position: absolute; */
   background: rgb(0, 0, 0, 0.8);
   width: 100%;
   transition: 1s ease;
