@@ -96,6 +96,7 @@ export default function Filler() {
             <div className='titles' >
             <h1>CineMate</h1>
             <p>Seen a lot? Are you forgetting more? Cinemate is your mate - save your memories... digitally.</p>
+            <p>Save all your movies in one place - just don't forget the password!</p>
             </div>
           </div>
           <div className='search' ref={searchRef}>

@@ -15,7 +15,7 @@ export default function InputYear(props) {
       autoComplete="off"
     >
       <Input 
-        placeholder="Year" 
+        placeholder="Year* (optional)" 
         value={props.yearValue} 
         onChange={(e) => props.setYearValue(e.target.value)}
         inputProps={{
