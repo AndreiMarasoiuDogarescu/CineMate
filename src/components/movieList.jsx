@@ -9,6 +9,7 @@ const MovieList = (props) => {
             {props.movies && props.movies.map((movie, index) => (
             <div className="movie-item" key={index}>
                 <p>{movie.Title}</p>
+                <p>{movie.Year}</p>
                 <img src={movie.Poster} alt="movieposter" />
                 <div onClick={() => props.handleFavouritesClick(movie)} className="overlay">
                     <FavouriteComponent />
