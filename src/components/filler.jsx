@@ -34,7 +34,7 @@ export default function Filler() {
   
   
     const getMovie = async (searchValue, yearValue) => {
-    const url = `http://www.omdbapi.com/?s=${searchValue}&apikey=409fda88&y=${yearValue}&type=movie`
+    const url = `https://www.omdbapi.com/?s=${searchValue}&apikey=409fda88&y=${yearValue}&type=movie`
   
     const response = await fetch(url)
     const responseJson = await response.json();
@@ -91,8 +91,8 @@ export default function Filler() {
   
   return (
       <ThemeProviderComponent>
-        <div >
-          <div className='intro' style={{ backgroundImage: `url(${heroImage})`}} ref={titleRef}>
+        <div ref={titleRef}>
+          <div className='intro' style={{ backgroundImage: `url(${heroImage})`}}>
             <div className='titles' >
             <h1>CineMate</h1>
             <p>Seen a lot? Are you forgetting more? Cinemate is your mate - save your memories... digitally.</p>
